@@ -56,7 +56,15 @@ From the Step 2 output, collect:
 - **Table names** from any DB error or SQL fragment in the error text
 - **Feature keyword** — infer from the file path or error message (e.g., `app/Controllers/Student/` → "Student Enrollment")
 
-#### 3b — Targeted Confluence lookup (execute in order, stop when you have enough)
+#### 3b — Targeted knowledge lookup (execute in order, stop when you have enough)
+
+**Lookup 0 — Learned knowledge base** (one small file):
+- Read `$PLUGIN_ROOT/knowledge/learned/INDEX.md`. If the directory or file doesn't exist, skip silently to Lookup 1 (KB not seeded yet).
+- Match each lookup key from 3a (class names, table names, feature keyword) against the index lines — case-insensitive substring match on title, hook, and inline tags.
+- Load each matching entry file from `$PLUGIN_ROOT/knowledge/learned/` (cap at 5, like Lookup 3).
+- For each match, add a line to the Doc Brief (3d) in `investigation.md`:
+  `**Learned knowledge:** {the fact / how to apply} (from {source ticket(s)}, see knowledge/learned/{file})`
+- These entries are distilled lessons from past tickets (gotchas, deployment quirks, troubleshooting patterns) — treat a matching entry as a high-priority investigation lead, ahead of documentation.
 
 **Lookup 1 — TAGS.json** (zero file loading):
 - Read `$PLUGIN_ROOT/knowledge/confluence/TAGS.json`
@@ -167,6 +175,10 @@ Before writing the root cause hypothesis, search for prior related investigation
 If a related investigation is found: read its `investigation.md` — note any prior root cause findings, data integrity issues, or fix patterns. Avoids re-deriving known solutions and surfaces recurring data problems.
 
 Write a "Prior Investigations" line in the Related Documentation section of `investigation.md`.
+
+**Capture candidate check:** if a prior investigation reveals a recurring pattern (same gotcha, same data problem shape, same troubleshooting shortcut) and Lookup 0 found **no** learned entry for it, add a line to `investigation.md`:
+`**Knowledge capture candidate:** {the recurring pattern} — save via ambs-knowledge at ticket close.`
+The ambs-debug agent picks these up in Phase 6.5 (Capture Learnings).
 
 ### Step 4b — Recognize Core Domain Model Patterns
 

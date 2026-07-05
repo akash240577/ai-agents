@@ -23,6 +23,14 @@ The Code Analysis section of `investigation.md` must be populated — run ambs-i
 
 If Code Analysis is still "TBD", tell the user to run the ambs-investigate skill first.
 
+### Step 1a — Consult Learned Knowledge
+
+Before drafting, check the learned knowledge base for known fix patterns or quirks in the affected area:
+
+1. Check `investigation.md` for `**Learned knowledge:**` lines already recalled by ambs-investigate (Step 3b, Lookup 0).
+2. Additionally grep `$PLUGIN_ROOT/knowledge/learned/INDEX.md` (case-insensitive, skip silently if missing) for the classes, tables, and feature keywords in the Affected Components section — the fix-relevant terms may differ from the error-parse terms.
+3. Load any matching entries and factor them into the plan (e.g. a `domain-gotcha` entry warning that a shared method has an AJAX caller with a strict output contract, or a `deployment-quirk` affecting how the fix rolls out). Cite the entry in the relevant plan section: `(known pattern — see knowledge/learned/{file}, from {ticket})`.
+
 ### Step 2 — Draft the Fix Plan
 
 Based on the investigation, prepare a fix plan covering:

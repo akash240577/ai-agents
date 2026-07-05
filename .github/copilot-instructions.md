@@ -143,6 +143,15 @@ Steps 4 (codebase investigation) and 5 (end user impact) are non-negotiable befo
 
 `dev-notes.md` is the developer's scratch pad. The agent reads it for context but **never writes to it**. All agent output goes to `investigation.md`.
 
+### Learned knowledge base (second brain)
+
+Distilled cross-ticket knowledge lives at `$PLUGIN_ROOT/knowledge/learned/` — one fact per file with frontmatter tags (`classes`/`tables`/`features`), plus `INDEX.md` (one greppable line per entry, the only file loaded for recall). Format spec: `knowledge/learned/README.md`.
+
+- **Recall**: `ambs-investigate` Step 3b Lookup 0 greps `INDEX.md` before any Confluence lookup; `ambs-fix-plan` consults it before drafting.
+- **Capture**: `ambs-knowledge` skill — proposed at ticket close (ambs-debug Phase 6.5) or on "remember this"; entries are only written after user confirmation.
+- Store non-obvious facts only (never what code, git history, or `ref_database.md` already says; never ticket-specific record IDs). Update or delete existing entries rather than duplicating.
+- Entries are committed to **this repo** only — never staged in a project-repo ticket MR.
+
 ---
 
 ## Scripts Reference

@@ -42,7 +42,7 @@ If the user provides a site name (e.g. `mayo`, `stanford`, `musc`), also invoke 
 ### Phase 2 — Investigate
 **Skill:** `ambs-investigate`
 
-Parse the error, search the codebase, consult `$PROJECT_ROOT/docs/` (database.md, architecture.md, feature docs) and `$PLUGIN_ROOT/knowledge/` (Confluence exports), write local reproduction steps, suggest debug logging, and document all findings in `investigation.md`.
+Parse the error, search the codebase, consult `$PROJECT_ROOT/docs/` (database.md, architecture.md, feature docs) and `$PLUGIN_ROOT/knowledge/` (learned knowledge base + Confluence exports), write local reproduction steps, suggest debug logging, and document all findings in `investigation.md`.
 
 Requires: workspace from Phase 1.
 
@@ -65,6 +65,13 @@ Stage only ticket-related files, confirm commit message with the user, push, and
 **Skill:** `ambs-jira-comment`
 
 Produce `teams-comment.md` (plain prose for Teams) and `jira-comment.md` (structured JIRA sections including the MR link). Offer to post the JIRA comment directly after user confirms.
+
+### Phase 6.5 — Capture Learnings
+**Skill:** `ambs-knowledge` (capture mode)
+
+After the JIRA comment is posted, distill durable learnings from the completed `investigation.md` into `$PLUGIN_ROOT/knowledge/learned/` — architecture details, deployment quirks, troubleshooting patterns, business context that would speed up a future similar ticket. Include any `**Knowledge capture candidate:**` lines flagged during Phase 2.
+
+Semi-automated: propose entries, let the user confirm, edit, or skip each — **never write without confirmation**. "Nothing worth saving" is a valid outcome; note it and move on.
 
 ### Phase 7 — Close Sub-Tasks *(conditional)*
 **Skill:** `ambs-close-subtasks`
@@ -95,6 +102,7 @@ Ask the user if they want to close the dev sub-tasks. If yes, run the skill to t
 | `error.md` | Agent | Raw error text and stack trace (written at workspace setup) |
 | `queries.sql` | Agent | Safe, read-only SQL troubleshooting queries |
 | `dev-notes.md` | Developer | Personal scratch pad — developer adds context; agent reads but never writes |
+| `$PLUGIN_ROOT/knowledge/learned/*` | Agent | Distilled cross-ticket knowledge (second brain) — written only with user confirmation via ambs-knowledge; committed to the ai-agents repo, never to the project repo |
 
 ## Success Criteria
 
@@ -107,4 +115,5 @@ Ask the user if they want to close the dev sub-tasks. If yes, run the skill to t
 - ✅ Fix plan approved and implemented
 - ✅ Changes committed (ticket files only) and GitLab MR created
 - ✅ `teams-comment.md` and `jira-comment.md` generated and user-confirmed
+- ✅ Capture step ran (Phase 6.5) — learnings saved to `knowledge/learned/` or explicitly skipped
 - ✅ Sub-tasks assigned, progressed, and optionally closed

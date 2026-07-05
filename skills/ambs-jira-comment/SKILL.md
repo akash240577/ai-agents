@@ -132,6 +132,8 @@ node "$PLUGIN_ROOT/scripts/cleanup-subtasks.js" -t {TICKET_NUMBER}
 
 Review the output and report which sub-tasks were closed and which (if any) were already closed or not found. If the user said they have **not** posted the JIRA comment, skip this step.
 
+If running inside the full ambs-debug agent flow, note that knowledge capture (Phase 6.5, `ambs-knowledge` skill) runs next — durable learnings from this ticket get distilled into `$PLUGIN_ROOT/knowledge/learned/` with user confirmation.
+
 ### Rules
 
 - **Templates are mandatory** — always read `docs/ambs-investigations/jira-template.md` (and `docs/ambs-investigations/teams-resolution-template.md` only when a Teams comment was explicitly requested) from the `docs/ambs-investigations/` folder and follow their structure exactly. Never write `jira-comment.md` or `teams-comment.md` ad-hoc, from memory, or with a custom structure. If a required template file is missing, stop and tell the user.
