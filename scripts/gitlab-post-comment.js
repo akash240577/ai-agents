@@ -57,7 +57,7 @@ const CHRIS_BEAMS_SEVEN_RULES = `1. Separate subject from body with a blank line
 
 
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const fs       = require('fs');
 const axios    = require('axios');
 const readline = require('readline');

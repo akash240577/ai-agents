@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 
 const fs = require('fs');
 const path = require('path');

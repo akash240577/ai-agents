@@ -15,7 +15,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const axios  = require('axios');
 const { program } = require('commander');
 const { loadGitLabCredentials } = require('../lib/credentials');

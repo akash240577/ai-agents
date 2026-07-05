@@ -17,22 +17,15 @@ Given a Datadog trace URL, this skill:
 
 ## Prerequisites
 
-Resolve `$TOOLKIT_ROOT` from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
+`$PLUGIN_ROOT` is set automatically by the Copilot CLI. If it is empty, the plugin is not installed — tell the user to run `copilot plugin install https://git.ascendlearning.com/ascend/medhub/utilities/ai-agents.git`.
+
+Always `cd` to `$PLUGIN_ROOT` before running scripts so relative paths (`data/`, `utils/`) resolve correctly:
 
 ```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
+cd "$PLUGIN_ROOT"
 ```
 
-If `$TOOLKIT_ROOT` is empty, stop and tell the user to check `ambs-toolkit/.env`. Credentials are loaded automatically from `$TOOLKIT_ROOT/.env`. Always `cd` to `$TOOLKIT_ROOT` before running any scripts so relative paths (e.g. `data/`, `utils/`) resolve correctly:
-
-```powershell
-cd "$TOOLKIT_ROOT"
-```
-
-Do **not** search for the toolkit and do **not** guess other paths — read `$TOOLKIT_ROOT` only from the `.env` above.
+Credentials (`JIRA_API_TOKEN`, `GITLAB_TOKEN`) are loaded automatically from `~/.copilot/.env`. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed.
 
 ---
 
@@ -86,7 +79,7 @@ https://us3.datadoghq.com/error-tracking?sp=%5B%7B%22i%22%3A%22error-tracking-is
 Run the dedup check to see if this error already has an open Jira ticket:
 
 ```powershell
-cd "$TOOLKIT_ROOT"
+cd "$PLUGIN_ROOT"
 node scripts/dd-dedup-check.js `
   --method "{METHOD}" `
   --resource "{RESOURCE}" `
@@ -129,7 +122,7 @@ Using the **entry point** extracted from the stack trace (e.g. `u/f/evaluations_
 
 4. **Check recent commits to the affected file(s)**:
    ```cmd
-   cd /d C:\Users\akash.rajput\workspace\medhub
+   cd /d $PROJECT_ROOT
    git --no-pager log --oneline --since="6 months ago" --all -- {affected_file}
    ```
    - For each commit found: verify it actually touches the **failing function/method** (not just the same file). Use `git show {SHA} -- {file} | Select-String -Pattern "{method_name}"` to confirm.
@@ -214,7 +207,7 @@ node -e "require('./jira-clone-ticket.js')" -- --template AMBS-22917 --dry-run .
 (it will fall back to a live fetch and you can re-cache manually)
 
 ```powershell
-cd "$TOOLKIT_ROOT"
+cd "$PLUGIN_ROOT"
 node scripts/jira-clone-ticket.js `
   --template AMBS-22917 `
   --summary "{BUSINESS_FRIENDLY_TITLE}" `
@@ -251,7 +244,7 @@ Report the created ticket key and URL to the user.
 The inline `node -e` approach **breaks on multiline stack traces**. Use a temp file instead:
 
 ```powershell
-cd "$TOOLKIT_ROOT"
+cd "$PLUGIN_ROOT"
 
 # Write temp script (use Create tool, not heredoc)
 # Content:

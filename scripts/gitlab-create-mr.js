@@ -14,7 +14,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const { execSync } = require('child_process');
 const axios        = require('axios');
 const readline     = require('readline');
@@ -39,7 +39,12 @@ const { baseUrl, token } = loadGitLabCredentials();
 
 if (!token) {
   console.error('ERROR: GitLab token not found.');
-  console.error('  Set GITLAB_TOKEN in .env or create ~/.gitlab_token');
+  console.error('  Set GITLAB_TOKEN in ~/.copilot/.env or create ~/.gitlab_token');
+  process.exit(1);
+}
+
+if (!baseUrl) {
+  console.error('ERROR: GITLAB_BASE_URL not set. Add it to ~/.copilot/.env');
   process.exit(1);
 }
 

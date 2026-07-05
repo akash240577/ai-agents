@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "if [ -d '${PLUGIN_ROOT}' ] && [ ! -d '${PLUGIN_ROOT}/node_modules' ]; then cd '${PLUGIN_ROOT}' && npm install --silent 2>/dev/null; fi",
+        "powershell": "if ((Test-Path '${PLUGIN_ROOT}') -and -not (Test-Path '${PLUGIN_ROOT}\\node_modules')) { Push-Location '${PLUGIN_ROOT}'; npm install --silent 2>$null; Pop-Location }",
+        "timeoutSec": 90
+      }
+    ]
+  }
+}

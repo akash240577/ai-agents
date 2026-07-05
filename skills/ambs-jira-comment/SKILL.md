@@ -11,27 +11,11 @@ Generate a JIRA comment from a completed investigation. Reads investigation.md a
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
-
-```powershell
-# PowerShell — load TOOLKIT_ROOT and INVESTIGATIONS_ROOT from ambs-toolkit/.env
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2
-    [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT       = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-Write-Host "TOOLKIT_ROOT=$TOOLKIT_ROOT"
-Write-Host "INVESTIGATIONS_ROOT=$INVESTIGATIONS_ROOT"
-```
-
-If either value is empty, stop and tell the user to check `ambs-toolkit/.env`.
-
-`$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
 The fix should be implemented and the GitLab MR created (via ambs-commit-mr) before running this skill so the MR URL can be included in the Assets / Branch section.
 
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Load Context
 
@@ -143,7 +127,7 @@ The Teams comment (`teams-comment.md`), if generated, must also be copied manual
 Only run this step once the user has confirmed (in Step 5) that they posted the JIRA comment. When confirmed, run the cleanup-subtasks script without waiting for further confirmation:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/cleanup-subtasks.js" -t {TICKET_NUMBER}
+node "$PLUGIN_ROOT/scripts/cleanup-subtasks.js" -t {TICKET_NUMBER}
 ```
 
 Review the output and report which sub-tasks were closed and which (if any) were already closed or not found. If the user said they have **not** posted the JIRA comment, skip this step.
@@ -153,6 +137,6 @@ Review the output and report which sub-tasks were closed and which (if any) were
 - **Templates are mandatory** — always read `docs/ambs-investigations/jira-template.md` (and `docs/ambs-investigations/teams-resolution-template.md` only when a Teams comment was explicitly requested) from the `docs/ambs-investigations/` folder and follow their structure exactly. Never write `jira-comment.md` or `teams-comment.md` ad-hoc, from memory, or with a custom structure. If a required template file is missing, stop and tell the user.
 - **Do not generate `teams-comment.md` by default** — only write it when the user explicitly asks for a Teams comment/update. A request to "write the JIRA comment" does not include the Teams comment.
 - This skill only generates documentation — it does not modify application code
-- **`$INVESTIGATIONS_ROOT` is loaded from `ambs-toolkit/.env`** — it points to `$PROJECT_ROOT/docs/ambs-investigations` (a separate git repository, not the main project repo); never hardcode it
-- **Never commit investigation files to the main project repo** — the workspace lives in `$INVESTIGATIONS_ROOT/` (= `$PROJECT_ROOT/docs/ambs-investigations`), which is its own separate git repository
+- **`$INVESTIGATIONS_ROOT`** defaults to `$PROJECT_ROOT/docs/ambs-investigations` — never hardcode it; override via `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere
+- **Never commit investigation files to the main project repo** — the workspace lives in `$INVESTIGATIONS_ROOT/`, which is separate from the project repo; never stage or push these files via the main project repo
 - **Never push** any repository

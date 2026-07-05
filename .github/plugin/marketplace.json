@@ -1,0 +1,18 @@
+{
+  "name": "ai-agents",
+  "owner": {
+    "name": "Ascend Learning / MedHub Team"
+  },
+  "metadata": {
+    "description": "GitHub Copilot agents and skills for MedHub / AMBS development workflows",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-agents",
+      "description": "Agents and skills for AMBS ticket debugging, MR review, Jira/GitLab operations, Datadog ticket creation, and more. Covers the full developer workflow from error discovery through fix, MR, and Jira comment.",
+      "version": "1.0.0",
+      "source": "."
+    }
+  ]
+}

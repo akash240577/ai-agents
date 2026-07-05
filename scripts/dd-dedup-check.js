@@ -27,7 +27,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const fs   = require('fs');
 const path = require('path');
 const { program } = require('commander');
@@ -189,7 +189,8 @@ function main() {
   }
 
   const { ticket, openness, branch } = resolved;
-  const ticketUrl = `https://ascend-learning.atlassian.net/browse/${ticket.key}`;
+  const jiraBase = (process.env.JIRA_BASE_URL || '').replace(/\/$/, '');
+  const ticketUrl = jiraBase ? `${jiraBase}/browse/${ticket.key}` : ticket.key;
 
   if (opts.json) {
     console.log(JSON.stringify({

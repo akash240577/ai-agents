@@ -12,21 +12,11 @@ Commit only the files related to the current AMBS ticket and create a GitLab mer
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
-
-```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT        = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-```
-
-If `$TOOLKIT_ROOT` is empty, stop and tell the user to check `ambs-toolkit/.env`. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
 The fix must be implemented and locally tested before running this skill.
 
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Identify the Ticket
 
@@ -94,11 +84,11 @@ git push -u origin {TICKET_NUMBER}
 
 ### Step 8 — Create GitLab Merge Request
 
-Use the `node "$TOOLKIT_ROOT/scripts/gitlab-create-mr.js` wrapper (from `tools/ambs-metrics`). It uses
-`GITLAB_HOST` and `GITLAB_TOKEN` from `tools/ambs-metrics/.env`.
+Use the `node "$PLUGIN_ROOT/scripts/gitlab-create-mr.js` wrapper. It uses
+`GITLAB_BASE_URL` and `GITLAB_TOKEN` from `~/.copilot/.env`.
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/gitlab-create-mr.js --project {PROJECT_ID} --source {TICKET_NUMBER} --title "{TICKET_NUMBER} {ONE_LINE_DESCRIPTION}"
+node "$PLUGIN_ROOT/scripts/gitlab-create-mr.js --project {PROJECT_ID} --source {TICKET_NUMBER} --title "{TICKET_NUMBER} {ONE_LINE_DESCRIPTION}"
 ```
 
 The `{PROJECT_ID}` must be the numeric GitLab project ID. Determine it from:

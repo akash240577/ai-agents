@@ -14,9 +14,7 @@ Parse user input to extract the ticket number (e.g., `AMBS-19205`) and any error
 
 ### Prerequisites
 
-Confirm `$TOOLKIT_ROOT` and `$INVESTIGATIONS_ROOT` are set — both are written to `ambs-toolkit/.env` during setup. If either is missing, re-run `setup.ps1` / `setup.sh` from `ambs-toolkit/`. If invoked via the ambs-debug agent, Phase 0 has already resolved these.
-
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Git Branch
 
@@ -28,16 +26,16 @@ Scripts are called automatically by this skill. Credentials are loaded from `amb
 
 ### Step 2 — Create Investigation Folder via CLI
 
-Use the AMBS wrapper, passing `$INVESTIGATIONS_ROOT` so the workspace lands in the project's investigations folder at `$PROJECT_ROOT/docs/ambs-investigations` (a separate git repository, kept out of the main project repo):
+Use the init-ticket script, passing `$INVESTIGATIONS_ROOT` so the workspace lands in the configured investigations folder:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/init-ticket.js {TICKET_NUMBER} --dir "$INVESTIGATIONS_ROOT" --error "{ERROR_DESCRIPTION}"
+node "$PLUGIN_ROOT/scripts/init-ticket.js {TICKET_NUMBER} --dir "$INVESTIGATIONS_ROOT" --error "{ERROR_DESCRIPTION}"
 ```
 
 If there is no error text yet:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/init-ticket.js {TICKET_NUMBER} --dir "$INVESTIGATIONS_ROOT"
+node "$PLUGIN_ROOT/scripts/init-ticket.js {TICKET_NUMBER} --dir "$INVESTIGATIONS_ROOT"
 ```
 
 This creates/updates `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` with `investigation.md`, `error.md`, `queries.sql`, and `dev-notes.md`.
@@ -47,10 +45,10 @@ This creates/updates `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` with `investigation
 Assign the standard dev sub-tasks to the current user and move them to In Progress:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/assign-subtasks.js -t {TICKET_NUMBER}
+node "$PLUGIN_ROOT/scripts/assign-subtasks.js -t {TICKET_NUMBER}
 ```
 
-This command (from the `ambs-metrics` PATH scripts) handles everything in one step:
+This command handles everything in one step:
 reads JIRA credentials, finds the Dev Investigation / Code Changes / Dev Testing sub-tasks,
 assigns them to the authenticated user, and transitions each to In Progress.
 
@@ -65,6 +63,6 @@ Report what was created and suggest next steps:
 
 ### Rules
 
-- **Never commit investigation files to the main project repo** — the workspace at `$INVESTIGATIONS_ROOT/` (= `$PROJECT_ROOT/docs/ambs-investigations`) is its own separate git repository; never stage or push these files via the main project repo / fix MR
+- **Never commit investigation files to the main project repo** — the workspace at `$INVESTIGATIONS_ROOT/` is separate from the project repo; never stage or push these files via the main project repo / fix MR
 - **Never push** any repository
-- All investigation file paths use `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` — resolved from `ambs-toolkit/.env` (see `INVESTIGATIONS_ROOT` key)
+- All investigation file paths use `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` — defaults to `$PROJECT_ROOT/docs/ambs-investigations/{TICKET_NUMBER}/`; override via `INVESTIGATIONS_ROOT` in `~/.copilot/.env` if needed

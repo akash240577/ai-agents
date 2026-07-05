@@ -11,15 +11,15 @@ Review a GitLab merge request comprehensively by understanding both the code cha
 
 ### Prerequisites
 
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Fetch MR Details
 
-Use the `node "$TOOLKIT_ROOT/scripts/gitlab-get-mr.js` wrapper. It accepts a full
+Use the `node "$PLUGIN_ROOT/scripts/gitlab-get-mr.js` wrapper. It accepts a full
 GitLab MR web URL and handles token loading automatically.
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/gitlab-get-mr.js --mr {MR_URL} --diff --commits --json
+node "$PLUGIN_ROOT/scripts/gitlab-get-mr.js --mr {MR_URL} --diff --commits --json
 ```
 
 This prints JSON with three top-level keys: `mr` (metadata + diff_refs), `changes`
@@ -29,16 +29,16 @@ Extract all JIRA ticket references (e.g., AMBS-12345) from commit messages.
 
 ### Step 2 — Fetch JIRA Context
 
-For each JIRA ticket found in the commits, use the `node "$TOOLKIT_ROOT/scripts/jira-get-ticket.js` wrapper:
+For each JIRA ticket found in the commits, use the `node "$PLUGIN_ROOT/scripts/jira-get-ticket.js` wrapper:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/jira-get-ticket.js -t {TICKET_KEY}
+node "$PLUGIN_ROOT/scripts/jira-get-ticket.js -t {TICKET_KEY}
 ```
 
 Or for raw JSON to parse acceptance criteria:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/jira-get-ticket.js -t {TICKET_KEY} --json
+node "$PLUGIN_ROOT/scripts/jira-get-ticket.js -t {TICKET_KEY} --json
 ```
 
 If no ticket reference is found, proceed with code review only and note that requirements
@@ -117,12 +117,12 @@ Options:
 
 ### Step 8 — Post to GitLab (only after approval)
 
-Use the `node "$TOOLKIT_ROOT/scripts/gitlab-post-comment.js` wrapper. It handles
+Use the `node "$PLUGIN_ROOT/scripts/gitlab-post-comment.js` wrapper. It handles
 token loading, summary notes, and inline discussions in one call.
 
-First, write the review summary to a temp file, then build an inline-comments JSON file:
+First, write the review summary to a temp file, then build an inline-comments JSON file. Use the system temp directory (`$env:TEMP` on Windows, `/tmp` on Unix/macOS) — replace `{TEMP_DIR}` in the paths below:
 
-**Inline comments JSON** (`/tmp/inline-comments.json`):
+**Inline comments JSON** (`{TEMP_DIR}/inline-comments.json`):
 ```json
 [
   {
@@ -138,10 +138,10 @@ First, write the review summary to a temp file, then build an inline-comments JS
 
 Then post everything:
 ```cmd
-node "$TOOLKIT_ROOT/scripts/gitlab-post-comment.js --mr {MR_URL} -f /tmp/review-summary.md --inline-file /tmp/inline-comments.json
+node "$PLUGIN_ROOT/scripts/gitlab-post-comment.js --mr {MR_URL} -f {TEMP_DIR}/review-summary.md --inline-file {TEMP_DIR}/inline-comments.json
 ```
 
-SHA values come from `diff_refs` in the `node "$TOOLKIT_ROOT/scripts/gitlab-get-mr.js --json` output (Step 1).
+SHA values come from `diff_refs` in the `node "$PLUGIN_ROOT/scripts/gitlab-get-mr.js --json` output (Step 1).
 
 Prefix each inline comment body with severity: `Severity: Critical/High/Medium/Low`
 

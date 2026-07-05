@@ -32,7 +32,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const axios    = require('axios');
 const fs       = require('fs');
 const path     = require('path');
@@ -73,11 +73,16 @@ const { baseUrl, email, token } = loadJiraCredentials();
 
 if (!email || !token) {
   console.error('ERROR: JIRA credentials not found.');
-  console.error('  Set JIRA_USER_EMAIL + JIRA_API_TOKEN in .env');
+  console.error('  Set JIRA_USER_EMAIL + JIRA_API_TOKEN in ~/.copilot/.env');
   process.exit(1);
 }
 
-const SITE_URL = baseUrl || 'https://ascend-learning.atlassian.net';
+if (!baseUrl) {
+  console.error('ERROR: JIRA_BASE_URL not set. Add it to ~/.copilot/.env');
+  process.exit(1);
+}
+
+const SITE_URL = baseUrl;
 
 const api = axios.create({
   baseURL: SITE_URL,
@@ -241,7 +246,9 @@ function extractInheritedFields(templateFields) {
 function buildLabels(templateLabels) {
   const base = new Set(templateLabels ?? []);
   base.add('DatadogMH');
-  base.add('akash');
+  if (process.env.JIRA_LABELS) {
+    process.env.JIRA_LABELS.split(',').map(s => s.trim()).forEach(l => base.add(l));
+  }
   base.add('DATADOG-AI-CREATE');
   return [...base];
 }

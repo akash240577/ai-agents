@@ -11,17 +11,7 @@ Present a fix plan for an AMBS ticket and implement it after approval. Requires 
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
-
-```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT        = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-```
-
-If either value is empty, stop and tell the user to check `ambs-toolkit/.env`. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
 The Code Analysis section of `investigation.md` must be populated — run ambs-investigate first if it shows "TBD".
 

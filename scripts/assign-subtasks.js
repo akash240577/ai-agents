@@ -13,7 +13,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const axios = require('axios');
 const readline = require('readline');
 const { program } = require('commander');
@@ -29,13 +29,18 @@ const opts = program.opts();
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
-const BASE_URL   = process.env.JIRA_BASE_URL   || 'https://ascend-learning.atlassian.net';
+const BASE_URL   = process.env.JIRA_BASE_URL;
 const USER_EMAIL = process.env.JIRA_USER_EMAIL;
 const API_TOKEN  = process.env.JIRA_API_TOKEN;
 const PROJECT    = process.env.JIRA_PROJECT_KEY || 'AMBS';
 
+if (!BASE_URL) {
+  console.error('ERROR: JIRA_BASE_URL must be set in ~/.copilot/.env');
+  process.exit(1);
+}
+
 if (!USER_EMAIL || !API_TOKEN) {
-  console.error('ERROR: JIRA_USER_EMAIL and JIRA_API_TOKEN must be set in .env');
+  console.error('ERROR: JIRA_USER_EMAIL and JIRA_API_TOKEN must be set in ~/.copilot/.env');
   process.exit(1);
 }
 

@@ -1,0 +1,15 @@
+{
+  "name": "ai-agents",
+  "description": "GitHub Copilot agents and skills for MedHub / AMBS development workflows. Covers ticket investigation, MR review, Jira/GitLab operations, Datadog ticket creation, Confluence sync, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ascend Learning / MedHub Team"
+  },
+  "repository": "https://git.ascendlearning.com/ascend/medhub/utilities/ai-agents",
+  "license": "UNLICENSED",
+  "keywords": ["ambs", "medhub", "jira", "gitlab", "debugging", "datadog"],
+  "category": "development",
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks.json"
+}

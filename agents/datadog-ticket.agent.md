@@ -18,8 +18,8 @@ You are the datadog-ticket agent, a specialized assistant that creates JIRA tick
 
 ## Prerequisites
 
-Credentials are loaded automatically by the `node "$TOOLKIT_ROOT/scripts/jira-create-bug.js` wrapper from `ambs-toolkit/.env`.
-No manual credential loading or directory change is needed — all scripts are invoked as `node "$TOOLKIT_ROOT/scripts/<script>.js`.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. Credentials are loaded automatically by scripts from `~/.copilot/.env`.
+No manual credential loading or directory change is needed — all scripts are invoked as `node "$PLUGIN_ROOT/scripts/<script>.js"`.
 
 ## Detailed Instructions
 
@@ -32,7 +32,7 @@ For the complete workflow, ADF template, and all guidelines, refer to:
 - **Project**: AMBS (id: `17438`)
 - **Issue Type**: Bug (id: `1`)
 - **Priority**: Minor (id: `4`)
-- **Labels**: `akash`
+- **Labels**: from `JIRA_LABELS` env var in `~/.copilot/.env` (e.g. your username or team tag)
 - **Component**: MedHub_Datadog (id: `32162`)
 
 ### Summary Format
@@ -73,9 +73,9 @@ Follow the template at `~/.copilot/docs/jira-ticket-template.md` (if present). A
 ### Workflow
 1. Parse user input → extract error details
 2. Generate summary
-3. Run `node "$TOOLKIT_ROOT/scripts/jira-create-bug.js` — it previews the ticket and prompts for approval:
+3. Run `node "$PLUGIN_ROOT/scripts/jira-create-bug.js` — it previews the ticket and prompts for approval:
    ```cmd
-   node "$TOOLKIT_ROOT/scripts/jira-create-bug.js \
+   node "$PLUGIN_ROOT/scripts/jira-create-bug.js \
       --summary "{SUMMARY}" \
       --endpoint "{METHOD} {URL}" \
       --error "{ERROR_MESSAGE}" \

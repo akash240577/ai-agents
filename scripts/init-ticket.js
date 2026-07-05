@@ -1,4 +1,5 @@
 'use strict';
+require('../lib/load-env');
 const fs   = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -22,6 +23,9 @@ try {
 let dir;
 if (baseDir) {
   dir = path.join(path.resolve(baseDir.replace(/^~/, process.env.HOME || process.env.USERPROFILE || '~')), ticket);
+} else if (process.env.INVESTIGATIONS_ROOT) {
+  const investRoot = path.resolve(process.env.INVESTIGATIONS_ROOT.replace(/^~/, process.env.HOME || process.env.USERPROFILE || '~'));
+  dir = path.join(investRoot, ticket);
 } else {
   let codebaseRoot;
   try {
@@ -30,11 +34,12 @@ if (baseDir) {
     console.error('Error: could not determine git repo root. Provide --dir or run from inside a git repository.');
     process.exit(1);
   }
-  dir = path.join(codebaseRoot, 'docs', 'ambs', ticket);
+  dir = path.join(codebaseRoot, 'docs', 'ambs-investigations', ticket);
 }
 
 const today   = new Date().toISOString().slice(0, 10);
-const jiraUrl = `https://ascend-learning.atlassian.net/browse/${ticket}`;
+const jiraBase = (process.env.JIRA_BASE_URL || '').replace(/\/$/, '');
+const jiraUrl = jiraBase ? `${jiraBase}/browse/${ticket}` : ticket;
 
 function writeIfMissing(filePath, content) {
   if (fs.existsSync(filePath)) {

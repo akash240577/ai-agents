@@ -12,21 +12,11 @@ Close the standard dev sub-tasks (Dev Investigation, Code Changes, Dev Testing) 
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
-
-```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT        = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-```
-
-If `$TOOLKIT_ROOT` is empty, stop and tell the user to check `ambs-toolkit/.env`. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
 Run only after the fix is committed and the MR is created.
 
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Identify the Ticket
 
@@ -37,10 +27,10 @@ Determine the ticket number from:
 
 ### Step 2 — Close Sub-Tasks
 
-Run the cleanup script (from the `ambs-metrics` PATH scripts):
+Run the cleanup script:
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/cleanup-subtasks.js -t {TICKET_NUMBER}
+node "$PLUGIN_ROOT/scripts/cleanup-subtasks.js -t {TICKET_NUMBER}
 ```
 
 This command handles everything: reads JIRA credentials, finds the Dev Investigation /

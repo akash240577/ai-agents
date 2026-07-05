@@ -109,7 +109,7 @@ git commit -F commitmsg.txt
 ### Step 8 — Optional: Push and create MR/PR
 
 - Ask the user if they want to push the branch and create a Merge Request / Pull Request.
-- If yes, run `git push -u origin {branch}` and use existing repo wrappers if present (e.g., `node "$TOOLKIT_ROOT/scripts/gitlab-create-mr.js`) to create the MR. Confirm the MR URL and present it.
+- If yes, run `git push -u origin {branch}` and use existing repo wrappers if present (e.g., `node "$PLUGIN_ROOT/scripts/gitlab-create-mr.js`) to create the MR. Confirm the MR URL and present it.
 
 ## Safety & Rules
 

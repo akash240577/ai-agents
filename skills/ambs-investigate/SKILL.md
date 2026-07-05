@@ -12,19 +12,9 @@ Investigate an AMBS ticket error by parsing the stack trace, searching code, and
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
-```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT        = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-```
-
-If either value is empty, stop and tell the user to check `ambs-toolkit/.env`. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
-
-If any are unset, start from the ambs-debug agent. The investigation workspace at `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` must exist — run ambs-debug-workspace first if it doesn't.
+The investigation workspace at `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` must exist — run ambs-debug-workspace first if it doesn't.
 
 ### Step 1 — Load Context
 
@@ -69,27 +59,27 @@ From the Step 2 output, collect:
 #### 3b — Targeted Confluence lookup (execute in order, stop when you have enough)
 
 **Lookup 1 — TAGS.json** (zero file loading):
-- Read `$TOOLKIT_ROOT/knowledge/confluence/TAGS.json`
+- Read `$PLUGIN_ROOT/knowledge/confluence/TAGS.json`
 - Look up each class name, table name, and feature keyword under the `classes`, `tables`, and `features` keys
 - Collect matching Confluence page IDs
 - If TAGS.json doesn't exist or returns no matches: proceed to Lookup 2
 
 **Lookup 2 — Index title/summary scan** (one file):
-- Read `$TOOLKIT_ROOT/knowledge/confluence/index.json`
+- Read `$PLUGIN_ROOT/knowledge/confluence/index.json`
 - Filter entries whose `title` or `summary` field contains any lookup key (case-insensitive substring match)
 - Add matching page IDs to the list
 - For each match: check `fetchedAt` — mark ⚠️ stale if older than 30 days
 
 **Lookup 3 — Resolve IDs → file paths, then load** (full content, only confirmed matches):
 - For each unique page ID collected from Lookups 1 and 2: look it up in `index.json` to get its `filePath` field (e.g. `"MH-SPACE/Student-Enrollment.md"`)
-- Load `$TOOLKIT_ROOT/knowledge/confluence/{filePath}` for each resolved path
+- Load `$PLUGIN_ROOT/knowledge/confluence/{filePath}` for each resolved path
 - Cap at 5 pages: if more matched, sort by `fetchedAt` descending, load the top 5, and note the rest were skipped
 - If a page ID from TAGS.json has no entry in index.json: skip it and note it as missing in `investigation.md` (the page may not have been fetched yet)
-- If `knowledge/confluence/` is empty or `index.json` is missing: write "Knowledge base not populated — run `node $TOOLKIT_ROOT/scripts/confluence-fetch.js <url>`" in `investigation.md` and proceed to 3c
+- If `knowledge/confluence/` is empty or `index.json` is missing: write "Knowledge base not populated — run `node $PLUGIN_ROOT/scripts/confluence-fetch.js <url>`" in `investigation.md` and proceed to 3c
 
 #### 3c — Project docs lookup
 
-- **`C:\Users\akash.rajput\workspace\medhub\.github\ref_database.md`** *(only if table names were extracted)*: Search for the heading `` ### `{table_name}` `` for each table and read only that section — do not load the full file. Note column types, FK relationships, nullable fields.
+- **`$PROJECT_ROOT\.github\ref_database.md`** *(only if table names were extracted)*: Search for the heading `` ### `{table_name}` `` for each table and read only that section — do not load the full file. Note column types, FK relationships, nullable fields.
 - **`$PROJECT_ROOT/docs/architecture/system-architecture.md`** *(only if the failing file path is in an unfamiliar module)*: Load fully.
 - **`$PROJECT_ROOT/docs/features/{FEATURE_KEYWORD}.md`** *(always)*: Search for a file whose name contains the feature keyword. Load fully if found. If not found: create a stub at `$PROJECT_ROOT/docs/features/{FEATURE_NAME}.md` — populate it fully after Step 4 code search adds context.
 
@@ -104,7 +94,7 @@ If nothing was found across all lookups: write "No documentation found for [{fea
 
 #### 3e — Update TAGS.json with any new mappings
 
-If TAGS.json does not exist, create it at `$TOOLKIT_ROOT/knowledge/confluence/TAGS.json` with this exact stub:
+If TAGS.json does not exist, create it at `$PLUGIN_ROOT/knowledge/confluence/TAGS.json` with this exact stub:
 
 ```json
 {
@@ -195,7 +185,7 @@ If the stack trace lands inside one of these methods: the bug is almost always i
 
 If the failing class, function, or table is not found in `$PROJECT_ROOT` (medhub):
 
-Search these repos in the same workspace (paths vary — ask user or check `$TOOLKIT_ROOT/.env`):
+Search these repos in the same workspace (paths vary — ask user or check `$PLUGIN_ROOT/.env`):
 - `support/`
 - `app-server/`
 - `global-api/`

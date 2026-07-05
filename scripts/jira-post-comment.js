@@ -15,7 +15,7 @@
 
 'use strict';
 
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('../lib/load-env');
 const fs       = require('fs');
 const axios    = require('axios');
 const readline = require('readline');
@@ -44,12 +44,17 @@ const { baseUrl, email, token } = loadJiraCredentials();
 
 if (!email || !token) {
   console.error('ERROR: JIRA credentials not found.');
-  console.error('  Set JIRA_USER_EMAIL + JIRA_API_TOKEN in .env');
+  console.error('  Set JIRA_USER_EMAIL + JIRA_API_TOKEN in ~/.copilot/.env');
   console.error('  or add ~/.copilot/mcp.json with atlassian env vars');
   process.exit(1);
 }
 
-const SITE_URL = baseUrl || 'https://ascend-learning.atlassian.net';
+if (!baseUrl) {
+  console.error('ERROR: JIRA_BASE_URL not set. Add it to ~/.copilot/.env');
+  process.exit(1);
+}
+
+const SITE_URL = baseUrl;
 
 const api = axios.create({
   baseURL: SITE_URL,

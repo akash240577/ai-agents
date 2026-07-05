@@ -11,7 +11,7 @@ Create a JIRA ticket on the AMBS board from a Datadog error discovery.
 
 ### Prerequisites
 
-Scripts are called automatically by this skill. Credentials are loaded from `ambs-toolkit/.env`.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. Credentials are loaded automatically from `~/.copilot/.env`.
 
 ### Step 1 — Parse Error Details
 
@@ -59,11 +59,11 @@ All fields rendered as a single tight block (one paragraph with hard line breaks
 
 ### Step 5 — Create Ticket via Script
 
-Use the `node "$TOOLKIT_ROOT/scripts/jira-create-bug.js` wrapper. It reads JIRA
+Use the `node "$PLUGIN_ROOT/scripts/jira-create-bug.js` wrapper. It reads JIRA
 credentials automatically, shows a preview, prompts for approval, then creates the ticket.
 
 ```cmd
-node "$TOOLKIT_ROOT/scripts/jira-create-bug.js \
+node "$PLUGIN_ROOT/scripts/jira-create-bug.js \
   --summary "{SUMMARY}" \
   --endpoint "{METHOD} {URL}" \
   --error "{ERROR_MESSAGE}" \
@@ -84,7 +84,7 @@ JIRA defaults applied by the script:
 | Project | AMBS (id: `17438`) |
 | Issue type | Bug (id: `1`) |
 | Priority | Minor (id: `4`) |
-| Labels | `DatadogMH`, `akash` |
+| Labels | `DatadogMH` + values from `JIRA_LABELS` in `~/.copilot/.env` |
 | Component | MedHub_Datadog (id: `32162`) |
 
 The script outputs the created ticket key and URL:

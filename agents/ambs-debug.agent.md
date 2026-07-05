@@ -13,19 +13,22 @@ Work through these phases in order. Each phase is handled by a dedicated skill �
 
 ### Phase 0 — Resolve Paths (always first)
 
-Before invoking any skill, resolve and confirm these three variables once:
+Before invoking any skill, confirm these two variables:
 
 | Variable | How to resolve | Notes |
 |----------|----------------|-------|
-| `TOOLKIT_ROOT` | Follow the junction/symlink: macOS/Linux: `dirname $(realpath ~/.copilot/agents)` · Windows PowerShell: `(Get-Item "$env:USERPROFILE\.copilot\agents").Target \| Split-Path` | Auto-written to `ambs-toolkit/.env` by setup — do not ask the user |
-| `PROJECT_ROOT` | `git rev-parse --show-toplevel` from current working directory | — |
-| `INVESTIGATIONS_ROOT` | `INVESTIGATIONS_ROOT=` line in `$TOOLKIT_ROOT/.env` | If missing, ask user once, append to `$TOOLKIT_ROOT/.env`, continue |
+| `PLUGIN_ROOT` | Set automatically by the Copilot CLI — already available in the environment | If missing, the plugin is not installed; direct user to run `copilot plugin install ...` |
+| `PROJECT_ROOT` | `git rev-parse --show-toplevel` from current working directory | If not in a git repo, ask the user which project to debug |
+| `INVESTIGATIONS_ROOT` | Defaults to `$PROJECT_ROOT/docs/ambs-investigations` — **no configuration needed** | Override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only when investigations are stored outside the project |
 
-If `TOOLKIT_ROOT` cannot be resolved (e.g. `~/.copilot/agents` does not exist), the user has not completed setup — direct them to run `setup.sh` (macOS/Linux) or `setup.ps1` (Windows) from the `ambs-toolkit/` folder.
+`PLUGIN_ROOT` is injected by the CLI when agents and skills run — **never hardcode or guess this path**. All scripts are invoked as `node "$PLUGIN_ROOT/scripts/<script>.js"`.
 
-If `PROJECT_ROOT` cannot be resolved (not inside a git repo), ask the user which project to debug (medhub / support / app-server) and use the path they provide.
+If `PLUGIN_ROOT` is not set, the plugin is not installed. Direct the user to:
+```shell
+copilot plugin install https://git.ascendlearning.com/ascend/medhub/utilities/ai-agents.git
+```
 
-**Access scope note:** This agent session runs from within a project repo (e.g. medhub). If the agent is denied access to `$INVESTIGATIONS_ROOT` when trying to read or write workspace files, the setup script has not configured permissions correctly — tell the user to re-run `setup.sh` / `setup.ps1` from the `ambs-toolkit/` folder.
+**Access scope:** If the agent is denied access to `$INVESTIGATIONS_ROOT`, run `node "$PLUGIN_ROOT/scripts/setup-permissions.js" "$INVESTIGATIONS_ROOT"` to reconfigure Copilot's allowed paths.
 
 For cross-repo tickets, `PROJECT_ROOT` may be updated mid-session (e.g., "now investigate the app-server side"). The investigation workspace in `INVESTIGATIONS_ROOT/{TICKET}/` stays constant throughout.
 
@@ -39,7 +42,7 @@ If the user provides a site name (e.g. `mayo`, `stanford`, `musc`), also invoke 
 ### Phase 2 — Investigate
 **Skill:** `ambs-investigate`
 
-Parse the error, search the codebase, consult `$PROJECT_ROOT/docs/` (database.md, architecture.md, feature docs) and `$TOOLKIT_ROOT/knowledge/` (Confluence exports), write local reproduction steps, suggest debug logging, and document all findings in `investigation.md`.
+Parse the error, search the codebase, consult `$PROJECT_ROOT/docs/` (database.md, architecture.md, feature docs) and `$PLUGIN_ROOT/knowledge/` (Confluence exports), write local reproduction steps, suggest debug logging, and document all findings in `investigation.md`.
 
 Requires: workspace from Phase 1.
 
@@ -95,7 +98,7 @@ Ask the user if they want to close the dev sub-tasks. If yes, run the skill to t
 
 ## Success Criteria
 
-- ✅ Paths resolved: `TOOLKIT_ROOT`, `PROJECT_ROOT`, `INVESTIGATIONS_ROOT` confirmed at Phase 0
+- ✅ Paths resolved: `PLUGIN_ROOT`, `PROJECT_ROOT`, `INVESTIGATIONS_ROOT` confirmed at Phase 0
 - ✅ Workspace created (`$INVESTIGATIONS_ROOT/{TICKET}/` with all files)
 - ✅ `investigation.md` complete — all sections populated, including Steps to Reproduce
 - ✅ `investigation.md` Root Cause Depth block populated — category (1–5), introducing ticket recorded, fix location justified

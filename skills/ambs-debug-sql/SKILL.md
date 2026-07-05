@@ -13,17 +13,7 @@ Generate safe, read-only SQL troubleshooting queries for a database-related AMBS
 
 ### Prerequisites
 
-Resolve session variables from `ambs-toolkit/.env` (always at `C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env`):
-
-```powershell
-$envVars = Get-Content "C:\Users\akash.rajput\workspace\medhub\tools\ambs-metrics\ambs-toolkit\.env" | Where-Object { $_ -match '=' } | ForEach-Object {
-    $parts = $_ -split '=', 2; [PSCustomObject]@{ Key = $parts[0].Trim(); Value = $parts[1].Trim() }
-}
-$TOOLKIT_ROOT        = ($envVars | Where-Object Key -eq 'TOOLKIT_ROOT').Value
-$INVESTIGATIONS_ROOT = ($envVars | Where-Object Key -eq 'INVESTIGATIONS_ROOT').Value
-```
-
-If either value is empty, stop and tell the user to check `ambs-toolkit/.env`. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
+`PLUGIN_ROOT` is set automatically by the Copilot CLI. `INVESTIGATIONS_ROOT` defaults to `$PROJECT_ROOT/docs/ambs-investigations` — no configuration needed; override by setting `INVESTIGATIONS_ROOT` in `~/.copilot/.env` only if investigations are stored elsewhere. `$TICKET_NUMBER` — extract from the current git branch (`git branch --show-current`) or ask the user.
 
 The investigation workspace at `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` must exist with a completed `investigation.md` — run ambs-debug-workspace and ambs-investigate first if not.
 
@@ -32,7 +22,7 @@ The investigation workspace at `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/` must exis
 1. Read `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/investigation.md` — focus on Affected Components (tables) and Code Analysis
 2. Read `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/error.md` for the raw error
 3. Read `$INVESTIGATIONS_ROOT/{TICKET_NUMBER}/dev-notes.md` if it exists — for any developer-added database context
-4. **Schema lookup** — open `C:\Users\akash.rajput\workspace\medhub\.github\ref_database.md` and search for the heading `` ### `{table_name}` `` for each table name extracted from the error; read only that section. Use the column definitions (types, nullable, FK relationships) to write accurate queries. Do not load the full file.
+4. **Schema lookup** — open `$PROJECT_ROOT\.github\ref_database.md` and search for the heading `` ### `{table_name}` `` for each table name extracted from the error; read only that section. Use the column definitions (types, nullable, FK relationships) to write accurate queries. Do not load the full file.
 
 If the investigation workspace doesn't exist, tell the user to run ambs-debug-workspace and ambs-investigate first.
 
