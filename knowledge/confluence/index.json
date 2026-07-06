@@ -1,0 +1,1106 @@
+{
+  "1060012082": {
+    "title": "MedHub - Scheduling - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Scheduling\\MedHub-Scheduling-markdown.md",
+    "version": 10,
+    "fetchedAt": "2026-06-10T14:51:00.698Z",
+    "summary": "Audience: Internal MedHub users (Support, GME, Implementation, Product). This is the tribal-knowledge user manual for scheduling — the formal structure of the product, plus the \"why,\" the \"how it actually behaves,\" and the \"what to watch for\" that's normally only in the heads of the people who've worked the tickets."
+  },
+  "1072103430": {
+    "title": "MedHub Platform - Internal Documentation",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:39.107Z",
+    "summary": "Area to house internal, product-vetted documentation on the MedHub platform."
+  },
+  "1072234544": {
+    "title": "MedHub - Scheduling",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Scheduling.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:00.468Z",
+    "summary": "\\(no content)\\"
+  },
+  "1078165558": {
+    "title": "MedHub - Curriculum Goals & Objectives - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Curriculum-Goals-&-Objectives\\MedHub-Curriculum-Goals-&-Objectives-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:44.294Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078198307": {
+    "title": "MedHub - PLA",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-PLA.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:52.513Z",
+    "summary": "This page is the landing page for PLA documentation. The canonical reference is the MedHub - PLA - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078198346": {
+    "title": "MedHub - School Settings (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-School-Settings-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:01.579Z",
+    "summary": "This page is the landing page for School Settings (UME) documentation. The canonical reference is the MedHub - School Settings (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078198365": {
+    "title": "MedHub - Security & User Management - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Security-&-User-Management\\MedHub-Security-&-User-Management-markdown.md",
+    "version": 4,
+    "fetchedAt": "2026-06-10T14:51:02.061Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078231108": {
+    "title": "MedHub - Schedule Lottery (UME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Schedule-Lottery-(UME)\\MedHub-Schedule-Lottery-(UME)-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:51:01.433Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078296692": {
+    "title": "MedHub - Contracts",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Contracts.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:42.672Z",
+    "summary": "This page is the landing page for Contracts documentation. The canonical reference is the MedHub - Contracts - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078329392": {
+    "title": "MedHub - Program List (GME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Program-List-(GME)\\MedHub-Program-List-(GME)-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:54.101Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078362147": {
+    "title": "MedHub - Lab Coat - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Lab-Coat\\MedHub-Lab-Coat-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:50.667Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078394910": {
+    "title": "MedHub - Demographics — Student - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Student\\MedHub-Demographics-—-Student-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:46.304Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078394929": {
+    "title": "MedHub - Interfaces - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Integrations\\MedHub-Interfaces-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:50.181Z",
+    "summary": "MedHub supports a variety of interfaces that exchange data with external systems. These range from standard product integrations available to all clients, to premium paid add-ons, to fully custom client-specific interfaces built as one-off development projects."
+  },
+  "1078427670": {
+    "title": "MedHub - Resident Dashboards",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Resident-Dashboards.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:59.137Z",
+    "summary": "This page is the landing page for Resident Dashboards documentation. The canonical reference is the MedHub - Resident Dashboards - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078427693": {
+    "title": "MedHub - Gradebook (UME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Gradebook-(UME)\\MedHub-Gradebook-(UME)-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:49.193Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078427712": {
+    "title": "MedHub - Procedures - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Procedures\\MedHub-Procedures-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:53.765Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078460433": {
+    "title": "MedHub - Evaluations — UME - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-UME-markdown.md",
+    "version": 4,
+    "fetchedAt": "2026-06-10T14:50:47.504Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078525996": {
+    "title": "MedHub - Demographics — Faculty",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Faculty.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:45.152Z",
+    "summary": "This page is the landing page for Demographics — Faculty documentation. The canonical reference is the MedHub - Demographics — Faculty - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078526036": {
+    "title": "MedHub - PLA - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-PLA\\MedHub-PLA-markdown.md",
+    "version": 6,
+    "fetchedAt": "2026-06-10T14:50:52.692Z",
+    "summary": "Source of truth for root settings referenced in this document: support.medhub.com Lists Settings (filter by settingspla)."
+  },
+  "1078526055": {
+    "title": "MedHub - Program Scorecards - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Program-Scorecards\\MedHub-Program-Scorecards-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:54.512Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078558769": {
+    "title": "MedHub - Root Settings Reference - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Root-Settings-Reference\\MedHub-Root-Settings-Reference-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:51:00.003Z",
+    "summary": "Source of truth for current setting values: support.medhub.com Lists Settings. This reference documents the full catalog of root settings as of the April 2026 export. MedHub root settings control platform behavior at the site-wide and institution level."
+  },
+  "1078591517": {
+    "title": "MedHub - Alert Recipients - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Alert-Recipients\\MedHub-Alert-Recipients-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:40.672Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078624283": {
+    "title": "MedHub - Institutional Splits - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Institutional-Splits\\MedHub-Institutional-Splits-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:49.841Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Institutional Splits."
+  },
+  "1078657036": {
+    "title": "MedHub - Curriculum Mapping (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Curriculum-Mapping-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:44.434Z",
+    "summary": "This page is the landing page for Curriculum Mapping (UME) documentation. The canonical reference is the MedHub - Curriculum Mapping (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078722617": {
+    "title": "MedHub - Institutional Splits",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Institutional-Splits.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:49.684Z",
+    "summary": "This page is the landing page for Institutional Splits documentation. The canonical reference is the MedHub - Institutional Splits - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078755406": {
+    "title": "MedHub - Course List (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Course-List-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:43.423Z",
+    "summary": "This page is the landing page for Course List (UME) documentation. The canonical reference is the MedHub - Course List (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078755428": {
+    "title": "MedHub - Training History - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Training-History\\MedHub-Training-History-markdown.md",
+    "version": 8,
+    "fetchedAt": "2026-06-10T14:51:02.706Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078788121": {
+    "title": "MedHub - Implementation & Configuration",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Implementation-&-Configuration.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:49.343Z",
+    "summary": "This page is the landing page for Implementation & Configuration documentation. The canonical reference is the MedHub - Implementation & Configuration - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078788140": {
+    "title": "MedHub - Lab Coat",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Lab-Coat.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:50.495Z",
+    "summary": "This page is the landing page for Lab Coat documentation. The canonical reference is the MedHub - Lab Coat - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078788166": {
+    "title": "MedHub - Contracts - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Contracts\\MedHub-Contracts-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:42.871Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078820900": {
+    "title": "MedHub - Training History",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Training-History.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:02.542Z",
+    "summary": "This page is the landing page for Training History documentation. The canonical reference is the MedHub - Training History - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1078886433": {
+    "title": "MedHub - Login & Authentication - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Login-&-Authentication\\MedHub-Login-&-Authentication-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:51.031Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Login & Authentication."
+  },
+  "1078886452": {
+    "title": "MedHub - Read-Only Accounts - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Read-Only-Accounts\\MedHub-Read-Only-Accounts-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:54.899Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1078951971": {
+    "title": "MedHub - Accreditation - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Accreditation\\MedHub-Accreditation-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:40.251Z",
+    "summary": "Source of truth for root settings referenced in this document: support.medhub.com Lists Settings (filter by settingaccreditation, accred, apr, cler, ape)."
+  },
+  "1078951991": {
+    "title": "MedHub - Email Audit & Notifications - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Email-Audit-&-Notifications\\MedHub-Email-Audit-&-Notifications-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:46.655Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Email Audit & Notifications."
+  },
+  "1078984722": {
+    "title": "MedHub - Evaluations — GME - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-GME-markdown.md",
+    "version": 8,
+    "fetchedAt": "2026-06-10T14:50:47.133Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079050305": {
+    "title": "MedHub - Demographics — Resident",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Resident.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:45.544Z",
+    "summary": "This page is the landing page for Demographics — Resident documentation. The canonical reference is the MedHub - Demographics — Resident - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079050328": {
+    "title": "MedHub - Reports - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.326Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Reports."
+  },
+  "1079083062": {
+    "title": "MedHub - Resident Dashboards - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Resident-Dashboards\\MedHub-Resident-Dashboards-markdown.md",
+    "version": 6,
+    "fetchedAt": "2026-06-10T14:50:59.317Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079115791": {
+    "title": "MedHub - Gradebook (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Gradebook-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:49.027Z",
+    "summary": "This page is the landing page for Gradebook (UME) documentation. The canonical reference is the MedHub - Gradebook (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079148596": {
+    "title": "MedHub - Demographics — Student",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Student.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:46.133Z",
+    "summary": "This page is the landing page for Demographics — Student documentation. The canonical reference is the MedHub - Demographics — Student - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079181331": {
+    "title": "MedHub - Procedures",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Procedures.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:53.584Z",
+    "summary": "This page is the landing page for Procedures documentation. The canonical reference is the MedHub - Procedures - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079214138": {
+    "title": "MedHub - Verification Requests - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Verification-Requests\\MedHub-Verification-Requests-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:51:03.082Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079246870": {
+    "title": "MedHub - Email Audit & Notifications",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Email-Audit-&-Notifications.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:46.461Z",
+    "summary": "This page is the landing page for Email Audit & Notifications documentation. The canonical reference is the MedHub - Email Audit & Notifications - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079312413": {
+    "title": "MedHub - Read-Only Accounts",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Read-Only-Accounts.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:54.676Z",
+    "summary": "This page is the landing page for Read-Only Accounts documentation. The canonical reference is the MedHub - Read-Only Accounts - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079312432": {
+    "title": "MedHub - Portal & Personalization - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Portal-&-Personalization\\MedHub-Portal-&-Personalization-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:53.063Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079345174": {
+    "title": "MedHub - Root Settings Reference",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Root-Settings-Reference.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:59.824Z",
+    "summary": "This page is the landing page for Root Settings Reference documentation. The canonical reference is the MedHub - Root Settings Reference - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079345197": {
+    "title": "MedHub - Resources, Documents, Forums - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Resources,-Documents,-Forums\\MedHub-Resources,-Documents,-Forums-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:59.669Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079377925": {
+    "title": "MedHub - Certificates - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Certificates\\MedHub-Certificates-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:42.152Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079410724": {
+    "title": "MedHub - Credentials Monitoring",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Credentials-Monitoring.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:43.772Z",
+    "summary": "This page is the landing page for Credentials Monitoring documentation. The canonical reference is the MedHub - Credentials Monitoring - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079410754": {
+    "title": "MedHub - Credentials Monitoring - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Credentials-Monitoring\\MedHub-Credentials-Monitoring-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:43.978Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079476280": {
+    "title": "MedHub - Evaluations",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:46.944Z",
+    "summary": "This page is the landing page for Evaluations documentation."
+  },
+  "1079476299": {
+    "title": "MedHub - Resources, Documents, Forums",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Resources,-Documents,-Forums.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:59.503Z",
+    "summary": "This page is the landing page for Resources, Documents, Forums documentation. The canonical reference is the MedHub - Resources, Documents, Forums - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079476320": {
+    "title": "MedHub - Course Enrollments - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Course-Enrollments-(UME)\\MedHub-Course-Enrollments-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:43.254Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079509023": {
+    "title": "MedHub - Login & Authentication",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Login-&-Authentication.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:50.845Z",
+    "summary": "This page is the landing page for Login & Authentication documentation. The canonical reference is the MedHub - Login & Authentication - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079541792": {
+    "title": "MedHub - Verification Requests",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Verification-Requests.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:02.883Z",
+    "summary": "This page is the landing page for Verification Requests documentation. The canonical reference is the MedHub - Verification Requests - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079541812": {
+    "title": "MedHub - Calendars - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Calendars\\MedHub-Calendars-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:41.709Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079541834": {
+    "title": "MedHub - Work Hours - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Work-Hours\\MedHub-Work-Hours-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:51:03.387Z",
+    "summary": "Purpose. Captures the current state of work hours functionality in the MedHub platform: what trainees, administrators, program directors, and GME/UME offices can do today, how the system behaves, and where settings and behavior live. Audience. Internal MedHub Support, Product, Engineering, and CS team members."
+  },
+  "1079574559": {
+    "title": "MedHub - Portal & Personalization",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Portal-&-Personalization.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:52.854Z",
+    "summary": "This page is the landing page for Portal & Personalization documentation. The canonical reference is the MedHub - Portal & Personalization - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079607312": {
+    "title": "MedHub - Demographics — Faculty - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Faculty\\MedHub-Demographics-—-Faculty-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:45.341Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079607331": {
+    "title": "MedHub - Onboarding - GME - Packages, Delivery",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Onboarding\\MedHub-Onboarding-GME-Packages,-Delivery.md",
+    "version": 4,
+    "fetchedAt": "2026-06-10T14:50:51.772Z",
+    "summary": "Scope. This article covers the GME (resident/fellow) side of onboarding: building packages and the documents inside them, scoping requirements to the right trainees, delivering packages, what trainees see and do, and the emails and Urgent Tasks involved."
+  },
+  "1079672856": {
+    "title": "MedHub - Conferences",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Conferences.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:42.321Z",
+    "summary": "This page is the landing page for Conferences documentation. The canonical reference is the MedHub - Conferences - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079672896": {
+    "title": "MedHub - Absences - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Absences\\MedHub-Absences-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:39.782Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079738419": {
+    "title": "MedHub - API Reference - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-API-Reference\\MedHub-API-Reference-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:41.370Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for API Reference."
+  },
+  "1079738438": {
+    "title": "MedHub - Portfolios - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Portfolios\\MedHub-Portfolios-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:53.380Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079771174": {
+    "title": "MedHub - API Reference",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-API-Reference.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:41.193Z",
+    "summary": "This page is the landing page for API Reference documentation. The canonical reference is the MedHub - API Reference - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079803926": {
+    "title": "MedHub - GME Office Functions - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-GME-Office-Functions\\MedHub-GME-Office-Functions-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:48.880Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for GME Office Functions."
+  },
+  "1079836690": {
+    "title": "MedHub - Root Side Task Scripts",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Root-Side-Task-Scripts.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:00.156Z",
+    "summary": "This page is the landing page for Root Side Task Scripts documentation. The canonical reference is the MedHub - Root Side Task Scripts - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079836710": {
+    "title": "MedHub - Demographics — Resident - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Resident\\MedHub-Demographics-—-Resident-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:45.756Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079869502": {
+    "title": "MedHub - Curriculum Mapping (UME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Curriculum-Mapping-(UME)\\MedHub-Curriculum-Mapping-(UME)-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:44.629Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1079902246": {
+    "title": "MedHub - Schedule Lottery (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Schedule-Lottery-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:01.251Z",
+    "summary": "This page is the landing page for Schedule Lottery (UME) documentation. The canonical reference is the MedHub - Schedule Lottery (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1079934996": {
+    "title": "MedHub - Calendars",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Calendars.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:41.541Z",
+    "summary": "This page is the landing page for Calendars documentation. The canonical reference is the MedHub - Calendars - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080000556": {
+    "title": "MedHub - Implementation & Configuration - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Implementation-&-Configuration\\MedHub-Implementation-&-Configuration-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:49.528Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Implementation & Configuration."
+  },
+  "1080033303": {
+    "title": "MedHub - GME Office Functions",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-GME-Office-Functions.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:48.726Z",
+    "summary": "This page is the landing page for GME Office Functions documentation. The canonical reference is the MedHub - GME Office Functions - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080033322": {
+    "title": "MedHub - Integrations",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Integrations.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:49.996Z",
+    "summary": "This page is the landing page for Interfaces documentation. The canonical reference is the MedHub - Interfaces - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080033343": {
+    "title": "MedHub - Alumni & Exit - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Alumni-&-Exit\\MedHub-Alumni-&-Exit-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:41.026Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080131599": {
+    "title": "MedHub - Certificates",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Certificates.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:41.935Z",
+    "summary": "This page is the landing page for Certificates documentation. The canonical reference is the MedHub - Certificates - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080131618": {
+    "title": "MedHub - Database Schema Reference",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Database-Schema-Reference.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:44.842Z",
+    "summary": "This page is the landing page for Database Schema Reference documentation. The canonical reference is the MedHub - Database Schema Reference - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080131639": {
+    "title": "MedHub - School Settings (UME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-School-Settings-(UME)\\MedHub-School-Settings-(UME)-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:01.741Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for School Settings (UME)."
+  },
+  "1080164373": {
+    "title": "MedHub - Curriculum Goals & Objectives",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Curriculum-Goals-&-Objectives.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:44.125Z",
+    "summary": "This page is the landing page for Curriculum Goals & Objectives documentation. The canonical reference is the MedHub - Curriculum Goals & Objectives - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080164395": {
+    "title": "MedHub - Work Hours",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Work-Hours.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:03.222Z",
+    "summary": "This page is the landing page for Work Hours documentation. The canonical reference is the MedHub - Work Hours - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080164425": {
+    "title": "MedHub - Mobile App - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Mobile-App\\MedHub-Mobile-App-markdown.md",
+    "version": 4,
+    "fetchedAt": "2026-06-10T14:50:51.362Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080197136": {
+    "title": "MedHub - Course Enrollments (UME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Course-Enrollments-(UME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:43.083Z",
+    "summary": "This page is the landing page for Course Enrollments (UME) documentation. The canonical reference is the MedHub - Course Enrollments (UME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080197155": {
+    "title": "MedHub - Onboarding",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Onboarding.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:51.569Z",
+    "summary": "This page is the landing page for Onboarding documentation. The canonical reference is the MedHub - Onboarding - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080197174": {
+    "title": "MedHub - Tests & Learning Modules",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Tests-&-Learning-Modules.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:02.229Z",
+    "summary": "This page is the landing page for Tests & Learning Modules documentation. The canonical reference is the MedHub - Tests & Learning Modules - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080229915": {
+    "title": "MedHub - Security & User Management",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Security-&-User-Management.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:01.887Z",
+    "summary": "This page is the landing page for Security & User Management documentation. The canonical reference is the MedHub - Security & User Management - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080295457": {
+    "title": "MedHub - Absences",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Absences.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:39.570Z",
+    "summary": "This page is the landing page for Absences documentation. The canonical reference is the MedHub - Absences - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080295476": {
+    "title": "MedHub - Alert Recipients",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Alert-Recipients.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:40.432Z",
+    "summary": "This page is the landing page for Alert Recipients documentation. The canonical reference is the MedHub - Alert Recipients - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080295514": {
+    "title": "MedHub - Mobile App",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Mobile-App.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:51.184Z",
+    "summary": "This page is the landing page for Mobile App documentation. The canonical reference is the MedHub - Mobile App - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080295537": {
+    "title": "MedHub - Tests & Learning Modules - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Tests-&-Learning-Modules\\MedHub-Tests-&-Learning-Modules-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:51:02.397Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080459269": {
+    "title": "MedHub - Program Scorecards",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Program-Scorecards.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:54.292Z",
+    "summary": "This page is the landing page for Program Scorecards documentation. The canonical reference is the MedHub - Program Scorecards - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080459289": {
+    "title": "MedHub - Database Schema Reference - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Database-Schema-Reference\\MedHub-Database-Schema-Reference-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:44.991Z",
+    "summary": "This reference documents the MedHub database schema as of the April 2026 export. It catalogs 811 tables and 8,263 columns across the standard MedHub database, providing table descriptions, column descriptions, and status indicators for both tables and columns."
+  },
+  "1080492069": {
+    "title": "MedHub - Institutional Release - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Scheduling\\MedHub-Scheduling-markdown\\MedHub-Institutional-Release-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:51:00.884Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080524803": {
+    "title": "MedHub - Alumni & Exit",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Alumni-&-Exit.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:40.809Z",
+    "summary": "This page is the landing page for Alumni & Exit documentation. The canonical reference is the MedHub - Alumni & Exit - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080524822": {
+    "title": "MedHub - Portfolios",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Portfolios.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:53.225Z",
+    "summary": "This page is the landing page for Portfolios documentation. The canonical reference is the MedHub - Portfolios - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080524848": {
+    "title": "MedHub - Conferences - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Conferences\\MedHub-Conferences-markdown.md",
+    "version": 4,
+    "fetchedAt": "2026-06-10T14:50:42.500Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080590337": {
+    "title": "MedHub - Accreditation",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Accreditation.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:40.038Z",
+    "summary": "This page is the landing page for Accreditation documentation. The canonical reference is the MedHub - Accreditation - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080623106": {
+    "title": "MedHub - Program List (GME)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Program-List-(GME).md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:53.931Z",
+    "summary": "This page is the landing page for Program List (GME) documentation. The canonical reference is the MedHub - Program List (GME) - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080623125": {
+    "title": "MedHub - Reports",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.103Z",
+    "summary": "This page is the landing page for Reports documentation. The canonical reference is the MedHub - Reports - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1080655883": {
+    "title": "MedHub - Course List (UME) - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Course-List-(UME)\\MedHub-Course-List-(UME)-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:43.607Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1080655902": {
+    "title": "MedHub - Root Side Task Scripts - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Root-Side-Task-Scripts\\MedHub-Root-Side-Task-Scripts-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:00.308Z",
+    "summary": "This page is awaiting content. It will be the canonical reference document for Root Side Task Scripts."
+  },
+  "1094418504": {
+    "title": "MedHub - Reports - Demographics - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-Demographics-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.468Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1098547213": {
+    "title": "MedHub - Work Hours Analytics Report - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Work-Hours\\MedHub-Work-Hours-Analytics-Report-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:51:03.542Z",
+    "summary": "Purpose. Captures the current state of the Work Hours Analytics Report: what GME users can do today, how the report is structured, how its calculations work, the architectural pipeline that delivers data into it, the known issues being remediated, and the export functionality that is planned but not yet released."
+  },
+  "1102446645": {
+    "title": "MedHub - Scheduling - Qgenda interface",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Scheduling\\MedHub-Scheduling-Qgenda-interface.md",
+    "version": 8,
+    "fetchedAt": "2026-06-10T14:51:01.062Z",
+    "summary": "May 2026 • Internal Use • Covers QGenda REST API v2 MedHub integrates with QGenda's REST API (v2) to import scheduling data for residency and fellowship programs."
+  },
+  "1109786728": {
+    "title": "MedHub - Reports — Evaluations, Submissions & Delivery - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Evaluations,-Submissions-&-Delivery-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.670Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1110638634": {
+    "title": "MedHub - Reports — Evaluations, Milestones - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Evaluations,-Milestones-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.961Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1111130162": {
+    "title": "MedHub - Reports — Evaluations, Aggregate - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Evaluations,-Aggregate-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:55.817Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1134297098": {
+    "title": "MedHub - Finance & Billing",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Finance-&-Billing.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:48.208Z",
+    "summary": "This page is the landing page for Finance & Billing documentation. This topic is split into two canonical reference docs: MedHub - IRIS 2."
+  },
+  "1134624776": {
+    "title": "MedHub - Billing - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Finance-&-Billing\\MedHub-Billing-markdown.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:48.581Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1135509509": {
+    "title": "MedHub - IRIS 2.0 - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Finance-&-Billing\\MedHub-IRIS-2.0-markdown.md",
+    "version": 3,
+    "fetchedAt": "2026-06-10T14:50:48.397Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1137016950": {
+    "title": "MedHub - Reports — Enrollment",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Enrollment.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:56.527Z",
+    "summary": "This page is the landing page for Enrollment Reports documentation. The canonical reference is the MedHub - Reports — Enrollment - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1138884712": {
+    "title": "MedHub - Reports — Work Hours - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Work-Hours\\MedHub-Reports-—-Work-Hours-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:56.343Z",
+    "summary": "In 2025, MedHub introduced the Work Hours Analytics Report, designed to consolidate the various calculation methods used across the legacy work hours reports into a single source of truth for work hour violations. Clients are encouraged to use the Analytics report when identifying work hour violations going forward."
+  },
+  "1139671075": {
+    "title": "MedHub - Reports — Work Hours",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Work-Hours.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:56.146Z",
+    "summary": "This page is the landing page for Work Hours Reports documentation. The canonical reference is the MedHub - Reports — Work Hours - markdown child page below. Support team members can create additional child pages here for related discussions, edge cases, screenshots, or working notes."
+  },
+  "1140260886": {
+    "title": "MedHub - Reports — Enrollment - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Enrollment\\MedHub-Reports-—-Enrollment-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:56.682Z",
+    "summary": "These reports provide visibility into student enrollment status, course capacity, service completion, grades, and rosters across UME clerkships and courses. They are found under Reports Scheduling Reports and Reports Demographics in UME contexts."
+  },
+  "1143046355": {
+    "title": "MedHub - Reports — Tests & Learning Modules - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Tests-&-Learning-Modules\\MedHub-Reports-—-Tests-&-Learning-Modules-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.272Z",
+    "summary": "These reports are found under Reports Site Statistics. They provide visibility into test completion and learning module completion across programs. Summarizes completed tests across trainees."
+  },
+  "1143308369": {
+    "title": "MedHub - Reports — Procedures - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Procedures\\MedHub-Reports-—-Procedures-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.659Z",
+    "summary": "The procedure reports are found under Reports Procedure Reports. They provide visibility into procedure logging activity, certifications, requirements tracking, verifications, and supervisor data. Unless otherwise noted, these reports are accessible to program administrators and GME Office users."
+  },
+  "1143373871": {
+    "title": "MedHub - Reports — Procedures",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Procedures.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.498Z",
+    "summary": "This page is the landing page for Procedure Reports documentation. The canonical reference is the MedHub - Reports — Procedures - markdown child page below."
+  },
+  "1143701596": {
+    "title": "MedHub - Reports — Scheduling",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Scheduling.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:56.812Z",
+    "summary": "This page is the landing page for Scheduling Reports documentation. The canonical reference is the MedHub - Reports — Scheduling - markdown child page below."
+  },
+  "1143963708": {
+    "title": "MedHub - Reports — Scheduling - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Scheduling\\MedHub-Reports-—-Scheduling-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.013Z",
+    "summary": "The scheduling reports are found under Reports Scheduling Reports. They provide visibility into rotation schedules, shift/call assignments, clinic activity, absences, service assignments, and scheduling configuration. Unless otherwise noted, these reports are accessible to program administrators and GME Office users."
+  },
+  "1144160315": {
+    "title": "MedHub - Reports — Site Administration",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Site-Administration.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.820Z",
+    "summary": "This page is the landing page for Site Administration Reports documentation. The canonical reference is the MedHub - Reports — Site Administration - markdown child page below."
+  },
+  "1144193079": {
+    "title": "MedHub - Reports — Accreditation & GME Oversight",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Accreditation-&-GME-Oversight.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.794Z",
+    "summary": "This page is the landing page for Accreditation & GME Oversight Reports documentation. The canonical reference is the MedHub - Reports — Accreditation & GME Oversight - markdown child page below."
+  },
+  "1144520761": {
+    "title": "MedHub - Reports — Tests & Learning Modules",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Tests-&-Learning-Modules.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.108Z",
+    "summary": "This page is the landing page for Tests & Learning Modules Reports documentation. The canonical reference is the MedHub - Reports — Tests & Learning Modules - markdown child page below."
+  },
+  "1144619032": {
+    "title": "MedHub - Reports — Training & Orientation",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Training-&-Orientation.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.439Z",
+    "summary": "This page is the landing page for Training & Orientation Reports documentation. The canonical reference is the MedHub - Reports — Training & Orientation - markdown child page below."
+  },
+  "1144881179": {
+    "title": "MedHub - Reports — Conferences - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Conferences\\MedHub-Reports-—-Conferences-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.360Z",
+    "summary": "The conference reports are found under Reports Conference Reports. They provide visibility into conference attendance, requirements tracking, presenter activity, CME credits, and conference scheduling details. Unless otherwise noted, these reports are accessible to program administrators."
+  },
+  "1144881201": {
+    "title": "MedHub - Reports — Training & Orientation - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Training-&-Orientation\\MedHub-Reports-—-Training-&-Orientation-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.605Z",
+    "summary": "These reports span the Demographics Reports section and GME/Finance Reports section. They support onboarding, orientation, graduation/termination tracking, and academic year preparation. Reports on lab coat and clothing orders managed through the Lab Coats functionality."
+  },
+  "1144979460": {
+    "title": "MedHub - Reports — Conferences",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Conferences.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.149Z",
+    "summary": "This page is the landing page for Conference Reports documentation. The canonical reference is the MedHub - Reports — Conferences - markdown child page below."
+  },
+  "1144979483": {
+    "title": "MedHub - Reports — Site Administration - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Site-Administration\\MedHub-Reports-—-Site-Administration-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:58.997Z",
+    "summary": "These reports are found under Reports Site Statistics. They provide visibility into system usage, user activity, and audit trails across the institution. Allows authorized users to view access and last edit information for a variety of MedHub functions."
+  },
+  "1145176071": {
+    "title": "MedHub - Reports — Accreditation & GME Oversight - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Reports\\MedHub-Reports-—-Accreditation-&-GME-Oversight\\MedHub-Reports-—-Accreditation-&-GME-Oversight-markdown.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:57.956Z",
+    "summary": "These reports span two sections in MedHub: the accreditation-related Compliance Reports (Reports Compliance Reports) and the GME/Finance Management Reports (Reports GME/HF Reports)."
+  },
+  "1148780560": {
+    "title": "MedHub - Document Storage & Import - markdown",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Demographics-—-Resident\\MedHub-Document-Storage-&-Import-markdown.md",
+    "version": 5,
+    "fetchedAt": "2026-06-10T14:50:45.975Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1183809626": {
+    "title": "MedHub - Evaluations - UME - Evaluation Delivery",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-UME-markdown\\MedHub-Evaluations-UME-Evaluation-Delivery.md",
+    "version": 5,
+    "fetchedAt": "2026-06-10T14:50:47.832Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1183875122": {
+    "title": "MedHub - Evaluations - UME - Evaluation Forms",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-UME-markdown\\MedHub-Evaluations-UME-Evaluation-Forms.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:47.671Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1184759859": {
+    "title": "MedHub - Evaluations - UME - Evaluation Responses & Permissions",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-UME-markdown\\MedHub-Evaluations-UME-Evaluation-Responses-&-Permissions.md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:48.022Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1189478432": {
+    "title": "MedHub - Onboarding - GME - Review & Approval",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Onboarding\\MedHub-Onboarding-GME-Review-&-Approval.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:51.965Z",
+    "summary": "Scope. This article covers the GME (resident/fellow) side of processing onboarding requirements after they are delivered: reviewing and approving submissions, individually and in batch; sending requirements back to trainees; how approving a dynamic form populates the demographics profile; faculty reviewers; and the rep"
+  },
+  "1189478469": {
+    "title": "MedHub - Evaluations - GME - Milestones",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Evaluations\\MedHub-Evaluations-—-GME-markdown\\MedHub-Evaluations-GME-Milestones.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:47.330Z",
+    "summary": "Source of truth for root setting current values. Default values cited in this document come from the April 2026 Root Settings export. For the most current information on any setting — including descriptions and current default values that may have changed — the canonical source is support.medhub.com Lists Settings."
+  },
+  "1190461484": {
+    "title": "MedHub - Onboarding - UME - Packages, Delivery",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Onboarding\\MedHub-Onboarding-UME-Packages,-Delivery.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:52.157Z",
+    "summary": "Scope. This article covers the UME (medical student) side of onboarding: building packages and the documents inside them, scoping requirements to the right students, delivering packages, what students see and do, and the emails and Urgent Tasks involved."
+  },
+  "1190821910": {
+    "title": "MedHub - Onboarding - UME - Review & Approval",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Onboarding\\MedHub-Onboarding-UME-Review-&-Approval.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:52.303Z",
+    "summary": "Scope. This article covers the UME (medical student) side of processing onboarding requirements after they are delivered: reviewing and approving submissions, individually and in batch; sending requirements back to students; faculty reviewers; and the reporting and export tools."
+  },
+  "1198358613": {
+    "title": "MedHub - Integrations - MyTIPReport (MTR)",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Integrations\\MedHub-Integrations-MyTIPReport-(MTR).md",
+    "version": 2,
+    "fetchedAt": "2026-06-10T14:50:50.359Z",
+    "summary": "Scope. This article documents how the myTIPreport (MTR) platform integrates with MedHub: how the two systems are connected, how user identities are kept in sync, and how completed MTR evaluations are pushed into MedHub for milestone tracking and ACGME compliance."
+  },
+  "1230962696": {
+    "title": "MedHub - Email Subject Lines",
+    "spaceKey": "MED",
+    "filePath": "MED\\MedHub-Platform-Internal-Documentation\\MedHub-Email-Audit-&-Notifications\\MedHub-Email-Subject-Lines.md",
+    "version": 1,
+    "fetchedAt": "2026-06-10T14:50:46.803Z",
+    "summary": "The following email subject lines were pulled from a data query in 2020. They are in order of number of times an email with that exact subject line were issued, with most commonly issued at the top. Many toward the bottom appear to be customized subject lines from the bulk email tool or other one-off events."
+  }
+}
