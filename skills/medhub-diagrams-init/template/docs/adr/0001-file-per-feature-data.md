@@ -1,0 +1,5 @@
+# File-per-feature data, collected by an index
+
+Each documented Feature gets its own `data/features/<slug>.ts` (the L2 node + its outgoing L2 edges) and `data/flows/<slug>.ts` (its L3/L4 flow), collected at load time by an index/barrel. We chose this over the reference app's single `features.ts` / `flows.ts` files because the diagrams are generated **one Feature per skill run, unattended**: a per-file layout makes each run an idempotent whole-file write (re-running a Feature overwrites, never duplicates), removes the need for the skill to splice into a large shared file, and lets each Feature declare its own outgoing edges so the loader unions them with no cross-file edits. The filename is the Feature key, so cross-system key collisions (a real bug in the reference: `invoices` existed under two systems) cannot occur.
+
+Consequence: a small `index.ts` (or `import.meta.glob`) collects the per-feature files; an invariant check verifies every flow key resolves to a feature node and every L2 edge target exists.

@@ -1,0 +1,3 @@
+# Diagrams app lives beside the medhub repo, not inside it
+
+The generated app lives at `~/workspace/medhub-diagrams/` — a sibling of the `medhub` checkout and its own git repo — rather than inside `medhub/docs/`. We keep a Node/Vite build out of the PHP monolith's tree, let the diagrams version independently, and mirror how the KLOwen reference (`klowen-diagrams`) sat beside the repos it documented. The cost is discoverability (the docs aren't in the code repo) and drift risk (nothing forces them to update together); we accept that because the per-feature skill re-derives flows from source on demand, so a stale diagram is regenerated rather than hand-patched.
